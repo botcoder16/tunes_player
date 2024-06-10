@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../../context'
 
 function Home() {
+const {songList,loading} = useContext(GlobalContext);
+
+
   return (
-    <div>Home</div>
+    <div className='py-8 container mx-auto flex flex-wrap'></div>
   )
 }
 
