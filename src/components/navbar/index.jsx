@@ -5,7 +5,6 @@ import { GlobalContext } from '../../context'
 export default function Navbar() {
 
     const { searchParam, setSearchParam, handleSubmit } = useContext(GlobalContext);
-    console.log(searchParam);
     return (
         <nav className='flex justify-between items-center py-6 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0'>
             <ul>
@@ -25,7 +24,7 @@ export default function Navbar() {
                     <NavLink to={'/'} className='text-black hover:text-gray-600 duration-300' >Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to={'/favorites'} className='text-black hover:text-gray-600 duration-300' >Favourites</NavLink>
+                    <NavLink to={'/favorites'} className='text-black hover:text-gray-600 duration-300' >Favorites</NavLink>
                 </li>
             </ul>
         </nav>
