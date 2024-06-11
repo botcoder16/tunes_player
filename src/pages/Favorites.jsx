@@ -1,7 +1,7 @@
 import React from 'react'
-import SongItem from '../../components/SongItem';
+import SongItem from '../components/SongItem';
 import { useContext } from 'react';
-import { GlobalContext } from '../../context';
+import { GlobalContext } from '../context';
 
 function Favorites() {
   const {favoritesList} = useContext(GlobalContext);

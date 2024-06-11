@@ -1,9 +1,10 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
-import Navbar from './components/navbar';
-import Home from './pages/home';
-import Favorites from './pages/favorites';
-import Details from './pages/song details';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Favorites from './pages/Favorites';
+import Details from './pages/Details';
+import Discover from './pages/Discover';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
           <Route
             path='/song-item/:id'
             element={<Details />}
+          />
+          <Route
+          path='/discover'
+          element={<Discover/>}
           />
         </Routes>
       </div>

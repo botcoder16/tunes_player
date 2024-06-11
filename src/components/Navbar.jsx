@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
-import { GlobalContext } from '../../context'
+import { GlobalContext } from '../context'
 
 export default function Navbar() {
 
@@ -22,6 +22,9 @@ export default function Navbar() {
             <ul className="flex gap-5">
                 <li>
                     <NavLink to={'/'} className='text-black hover:text-gray-600 duration-300' >Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/discover'} className='text-black hover:text-gray-600 duration-300'>Discover</NavLink>
                 </li>
                 <li>
                     <NavLink to={'/favorites'} className='text-black hover:text-gray-600 duration-300' >Favorites</NavLink>

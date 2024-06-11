@@ -10,6 +10,7 @@ export default function GlobalState({children}){
     const [songList, setSongList]= useState();
     const [songDetailsData, setSongDetailsData] = useState('');
     const [favoritesList, setFavoritesList] = useState([]);
+    const [discoverSongs, setDiscoverSongs] = useState();
 
     const navigate = useNavigate()
 
@@ -42,5 +43,5 @@ export default function GlobalState({children}){
         setFavoritesList(cpyFavoriteList)
     }
 
-    return <GlobalContext.Provider value={{searchParam, loading, songList ,setSearchParam, handleSubmit, songDetailsData, setSongDetailsData, handleAddToFavorite, favoritesList}}>{children}</GlobalContext.Provider>
+    return <GlobalContext.Provider value={{discoverSongs, searchParam, loading, songList ,setSearchParam, handleSubmit, songDetailsData, setSongDetailsData, handleAddToFavorite, favoritesList, setDiscoverSongs}}>{children}</GlobalContext.Provider>
 }

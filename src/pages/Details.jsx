@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { GlobalContext } from '../../context';
+import { GlobalContext } from '../context';
 import { Link } from 'react-router-dom';
 
 function Details() {
