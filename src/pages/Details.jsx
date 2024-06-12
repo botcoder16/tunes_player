@@ -41,7 +41,6 @@ function Details() {
           </button>
           <Link to={songDetailsData?.external_urls?.spotify} className='p-3 px-8 ml-4 rounded-lg text-sm uppercase font-medium tracking-wider mt-3 inline-block shadow-md bg-black text-white'>Open in Spotify</Link>
         </div>
-        <span className='mt-3'><strong>Id: </strong> {songDetailsData?.id}</span>
         <div className='mt-5'>
           <span className='text-2xl font-semibold text-black'>Preview:</span>
           <audio className='w-100 mt-2' src={songDetailsData?.preview_url} controls />
