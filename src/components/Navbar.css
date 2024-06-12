@@ -1,0 +1,78 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #09f;
+}
+
+h2 {
+  margin: 0;
+}
+
+.animated-tunes {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem; /* Adjust this value to make the font bigger */
+  animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #09f;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.favorites-link {
+  margin-right: 20px; /* Adjust this value as needed */
+}
+
+.tunes-link {
+  margin-right: 20px; /* Adjust this value as needed */
+}
+
+.flex-grow {
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input[type='text'] {
+  width: 100%; /* Ensure the input takes up the available space */
+}

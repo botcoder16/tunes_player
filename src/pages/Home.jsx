@@ -27,7 +27,7 @@ function Home() {
   }
   return (
     <>
-      <h2 className='font-extrbold text-4xl truncate uppercase text-black'>{title}</h2>
+      <h2 className='font-extrbold mt-3 text-4xl truncate uppercase text-black'>{title}</h2>
     <div className='py-8 container mx-auto flex flex-wrap justify-center gap-10'>
       {
         songList && songList.length >0 ? 
