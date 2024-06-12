@@ -37,7 +37,7 @@ function Home() {
 
   return (
     <>
-      <h2 className='font-extrabold mt-3 text-4xl truncate uppercase text-black'>{title}</h2>
+      <h2 className='font-bold mt-5 text-4xl truncate uppercase text-black'>{title}</h2>
       <div className='home-container py-8 container mx-auto flex flex-wrap justify-center gap-10'>
         {songList && songList.length > 0 ? 
           songList?.map(item => <SongItem key={item.id} item={item} />) : 

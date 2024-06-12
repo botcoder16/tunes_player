@@ -8,7 +8,7 @@ function Discover() {
   if (loading) return <div>Loading... Please wait!</div>
   return (
     <>
-      <h2 className='font-extrbold mt-3 text-4xl text- truncate uppercase text-black'>New Releases !</h2>
+      <h2 className='font-extrbold mt-5 text-4xl text- truncate uppercase text-black'>New Releases !</h2>
     <div className='py-8 container mx-auto flex flex-wrap justify-center gap-10'>
       {
         discoverSongs && discoverSongs.length >0 ? 

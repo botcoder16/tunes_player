@@ -52,7 +52,7 @@ function Details() {
             <ol className='flex flex-col gap-3'>
               {songDetailsData?.artists?.map((artist) => (
                 <li>
-                  <strong>Name:</strong><a href={artist?.external_urls?.spotify}> {artist.name}</a> <br />
+                  <strong>Name:</strong><a href={artist?.external_urls?.spotify}> {artist.name}</a>
                   <strong>Id:</strong> {artist.id} <br />
                 </li>
               ))}
