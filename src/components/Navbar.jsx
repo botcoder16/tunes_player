@@ -13,7 +13,7 @@ export default function Navbar() {
       <ul className="flex items-center gap-5">
         <li className="tunes-link">
           <NavLink to={'/'} className='text-black hover:text-gray-500 duration-300 text-extrabold'>
-            <h2 className='text-2xl font-semibold animated-tunes'>Tunes</h2>
+            <h2 className='indent-8 text-2xl font-semibold animated-tunes'>Tunes</h2>
           </NavLink>
         </li>
         <form onSubmit={handleSubmit} className="flex-grow">

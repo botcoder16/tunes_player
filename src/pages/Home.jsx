@@ -38,7 +38,8 @@ function Home() {
   return (
     <>
       <h2 className='font-extrbold mt-3 text-4xl truncate uppercase text-black'>{title}</h2>
-      <div className='py-8 container mx-auto flex flex-wrap justify-center gap-10'>
+      <div className='py-8 container mx-auto flex flex-wrap justify-center gap-10 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4'>
+      
         {songList && songList.length > 0 ? 
           songList?.map(item => <SongItem key={item.id} item={item} />) : 
           discoverSongs?.map(item => <DiscoverSongItem key={item.id} item={item} />)
