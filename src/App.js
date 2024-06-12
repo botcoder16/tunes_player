@@ -9,7 +9,7 @@ import Discover from './pages/Discover.jsx';
 function App() {
   return (
     <>
-      <div className='min-h-screen p-6 bg-white text-grey-600 text-lg'>
+      <div className='min-h-screen p-6 bg-black/15 text-grey-600 text-lg'>
         <Navbar/>
         <Routes>
           <Route
