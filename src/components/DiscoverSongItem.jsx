@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function DiscoverSongItem({ item }) {
   return (
-    <div className='flex flex-col w-80 overflow-hidden p-5 bg-black shadow-xl gap-5 border-2 rounded-2xl border-whiteshadow border rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out '>
+    <div className='flex flex-col w-80 overflow-hidden p-5 bg-black shadow-xl gap-5 border-2 rounded-2xl border-whiteshadow border-rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out '>
     
       <div className="h-80 flex justify-center overflow-hidden items-center rounded-xl">
         <img src={item?.images[2]?.url} alt="song item" className='block w-full' />
