@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../context';
 import SongItem from '../components/SongItem';
 import DiscoverSongItem from '../components/DiscoverSongItem';
-import './Home.css'; // Ensure to create or import appropriate CSS
+import './Home.css'; 
 
 function Home() {
   const { discoverSongs, songList, loading, setDiscoverSongs } = useContext(GlobalContext);
@@ -32,16 +32,16 @@ function Home() {
   if (songList && songList.length > 0) {
     title = 'Results';
   } else {
-    title = 'New Releases';
+    title = 'New Releases !';
   }
 
   return (
     <>
-      <h2 className='font-extrbold mt-3 text-4xl truncate uppercase text-black'>{title}</h2>
-      <div className='py-8 container mx-auto flex flex-wrap justify-center gap-10'>
+      <h2 className='font-extrabold mt-3 text-4xl truncate uppercase text-black'>{title}</h2>
+      <div className='home-container py-8 container mx-auto flex flex-wrap justify-center gap-10'>
         {songList && songList.length > 0 ? 
-          songList.map(item => <SongItem key={item.id} item={item} />) : 
-          discoverSongs.map(item => <DiscoverSongItem key={item.id} item={item} />)
+          songList?.map(item => <SongItem key={item.id} item={item} />) : 
+          discoverSongs?.map(item => <DiscoverSongItem key={item.id} item={item} />)
         }
       </div>
     </>

@@ -26,6 +26,7 @@ export default function GlobalState({children}){
                 setSearchParam("")
                 navigate('/')
             }
+            console.log(songList);
         } catch (e) {
             setLoading(false)
             setSearchParam('')            

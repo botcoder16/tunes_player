@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { GlobalContext } from '../context';
-import './Navbar.css'; // Ensure to create or import appropriate CSS
+import './Navbar.css'; 
 
 export default function Navbar() {
   const { searchParam, setSearchParam, handleSubmit } = useContext(GlobalContext);
