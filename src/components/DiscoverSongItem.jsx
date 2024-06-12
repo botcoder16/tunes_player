@@ -9,7 +9,7 @@ function DiscoverSongItem({ item }) {
       </div>
       <div>
         <Link to={item?.artists[0]?.external_urls?.spotify} className='text-sm text-cyan-700 font-medium'>{item?.artists[0]?.name}</Link>
-        <Link to={item?.external_urls}><h3 className='font-bold text-2xl truncate uppercase text-black'>{item?.name}</h3></Link>
+        <Link to={item?.external_urls?.spotify}><h3 className='font-bold text-2xl truncate uppercase text-black'>{item?.name}</h3></Link>
         <ul>
           <li className='text-sm text-cyan-800 font-medium my-1'>{item?.album_type}</li>
           <li className='text-sm text-cyan-800 font-medium'>{item?.release_date}</li>
