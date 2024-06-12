@@ -1,10 +1,10 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Favorites from './pages/Favorites';
-import Details from './pages/Details';
-import Discover from './pages/Discover';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+import Favorites from './pages/Favorites.jsx';
+import Details from './pages/Details.jsx';
+import Discover from './pages/Discover.jsx';
 
 function App() {
   return (
