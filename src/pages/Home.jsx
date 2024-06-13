@@ -9,7 +9,7 @@ function Home() {
   let title = '';
   useEffect(() => {
     async function getDiscoverSongs() {
-      const response = await fetch(`https://v1.nocodeapi.com/hello12342/spotify/IUjabDuJRuyaZJCO/browse/new`);
+      const response = await fetch(`https://v1.nocodeapi.com/hello12343/spotify/fxQHfdMoGtEbvizb/browse/new`);
       const data = await response.json();
 
       if (data?.albums) {

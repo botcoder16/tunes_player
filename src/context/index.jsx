@@ -18,7 +18,7 @@ export default function GlobalState({children}){
         event.preventDefault();
         try {
             setLoading(true);
-            const res = await fetch(`https://v1.nocodeapi.com/hello12342/spotify/IUjabDuJRuyaZJCO/search?q=${searchParam}&type=track`);
+            const res = await fetch(`https://v1.nocodeapi.com/hello12343/spotify/fxQHfdMoGtEbvizb/search?q=${searchParam}&type=track`);
             const data= await res.json();
             if(data?.tracks?.items){
                 setSongList(data.tracks.items)

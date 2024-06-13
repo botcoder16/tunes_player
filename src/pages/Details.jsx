@@ -9,7 +9,7 @@ function Details() {
 
   useEffect(() => {
     async function getSongDetails() {
-      const response = await fetch(`https://v1.nocodeapi.com/hello12342/spotify/IUjabDuJRuyaZJCO/tracks?ids=${id}`);
+      const response = await fetch(`https://v1.nocodeapi.com/hello12343/spotify/fxQHfdMoGtEbvizb/tracks?ids=${id}`);
       const data = await response.json();
 
       if (data?.tracks) {
